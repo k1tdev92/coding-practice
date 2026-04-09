@@ -13,6 +13,7 @@ function main(input) {
             }
         }
     }
+
     console.log(numbers.join(' '));
 
     for (let i = 0; i < n; i++) {
@@ -24,8 +25,8 @@ function main(input) {
             }
         }
     }
+    
     console.log(numbers.join(' '));
-
 }
 
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));

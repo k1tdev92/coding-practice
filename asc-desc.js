@@ -25,7 +25,7 @@ function main(input) {
             }
         }
     }
-    
+
     console.log(numbers.join(' '));
 }
 

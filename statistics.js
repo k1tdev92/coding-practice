@@ -12,6 +12,8 @@ for (let i = 0; i < numbers.length; i++) {
 
 const average = sum / numbers.length;
 const variance = (sumOfSquares / numbers.length) - (average * average);
+const std = Math.sqrt(variance);
 
 console.log(average);
 console.log(variance);
+console.log(std);

@@ -1,22 +1,20 @@
-function main(input) {
-    const lines = input.trim().split('\n');
-    const n = parseInt(lines[0]);
-    const numbers = lines[1].split(' ').map(Number);
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const lines = input.trim().split('\n');
 
-    let max = numbers[0];
-    let min = numbers[0];
-    for (let i = 1; i < n; i++) {
-        if (max < numbers[i]) {
-            max = numbers[i];
-        }
+const n = parseInt(lines[0]);
+const numbers = lines[1].split(' ').map(Number);
 
-        if (min > numbers[i]) {
-            min = numbers[i];
-        }
+let max = numbers[0];
+let min = numbers[0];
+for (let i = 1; i < n; i++) {
+    if (max < numbers[i]) {
+        max = numbers[i];
     }
 
-    console.log(max);
-    console.log(min);
+    if (min > numbers[i]) {
+        min = numbers[i];
+    }
 }
 
-main(require('fs').readFileSync('/dev/stdin', 'utf8'));
+console.log(max);
+console.log(min);

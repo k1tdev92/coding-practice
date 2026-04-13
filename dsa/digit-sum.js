@@ -9,6 +9,7 @@ while (tmp !== 0) {
   tmp = Math.floor(tmp / 10);
   digitCount++;
 }
+
 let sum = 0;
 for (let i = digitCount - 1; i >= 0; i--) {
   const a = Math.floor(n / Math.pow(10, i));

@@ -6,7 +6,7 @@ const numbers = lines[1].split(' ').map(Number);
 const k = Number(lines[2]);
 
 for (let i = 0; i < n; i++) {
-    if (numbers[i] === k) {
-        console.log(i + 1);
-    }
+  if (numbers[i] === k) {
+    console.log(i + 1);
+  }
 }

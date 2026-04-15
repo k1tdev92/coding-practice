@@ -1,7 +1,7 @@
-const input = require("fs").readFileSync("/dev/stdin", "utf8");
-const lines = input.trim().split("\n");
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const lines = input.trim().split('\n');
 
-const numbers = lines[0].split(" ").map(Number);
+const numbers = lines[0].split(' ').map(Number);
 
 let sum = 0;
 let sumOfSquares = 0;
